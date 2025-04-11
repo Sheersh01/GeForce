@@ -23,7 +23,7 @@ HTML • CSS • Tailwind CSS • JavaScript • GSAP • Swiper.js • Node.js/
 
 ## Setup
 ```bash
-git clone <repo>
+git clone https://github.com/Sheersh01/GeForce.git
 cd repo
 npm install
 npm run dev
