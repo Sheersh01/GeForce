@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  </head>
+  <body>
+    <div id="page1" class="h-full w-full bg-red-100">
+      <nav class="bg-gray-900 flex justify-between items-center px-4">
+        <img class="h-30" src="./public/logo.png" alt="">
+        <div class="nav-ryt">
+          <div class=""></div>
+          <div class="flex gap-4 text-white font-semibold text-[1.5vw] border-t-2 border-white">
+            <h1>Shop</h1>
+            <h1>Collectors</h1>
+            <h1>New Arrivals</h1>
+            <h1>Track Set</h1>
+          </div>
+        </div>
+      </nav>
+      <video autoplay muted loop src="h-full w-full object-cover"></video>
+    </div>
+    <div id="page2" class="h-full w-full bg-green-100">
+      <h1 class="font-[brick] text-[#FFA825] text-center text-[5vw]">Know Your Wheels!</h1>
+      <div class="bg"></div>
+      <div class="carousel">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div id="page3" class="h-full w-full bg-blue-100">
+      <h1 class="font-[brick] text-[#FFA825] text-center text-[5vw]">Shop By Theme!</h1>
+
+     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
