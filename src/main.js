@@ -1,54 +1,60 @@
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 5,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    375: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
 });
 
-function fulltimeline(){
-  var tl = gsap.timeline();
+// function fulltimeline(){
+//   var tl = gsap.timeline();
 
-  tl.from("#loader h3", {
-    x: 200,
-    opacity: 0,
-    duration: 1,
-    stagger: 0.1,
-  });
-  tl.to("#loader h3", {
-    opacity: 0,
-    x: -40,
-    stagger: 0.1,
-    duration: 0.5,
-  });
-  tl.to("#loader", {
-    opacity: 0,
-  });
-  tl.from("#page1-cont h1 span", {
-    y: 100,
-    opacity: 0,
-    stagger: 0.1,
-    duration: 0.4,
-  });
-  tl.to("#loader", {
-    display: "none",
-  });
-  gsap.from("#page1-cont h1 span", {
-    y: -100,
-    opacity: 0,
-    stagger: 0.1,
-    duration: 0.4,
-  });
+//   tl.from("#loader h3", {
+//     x: 200,
+//     opacity: 0,
+//     duration: 1,
+//     stagger: 0.1,
+//   });
+//   tl.to("#loader h3", {
+//     opacity: 0,
+//     x: -40,
+//     stagger: 0.1,
+//     duration: 0.5,
+//   });
+//   tl.to("#loader", {
+//     opacity: 0,
+//   });
+ 
+//   tl.to("#loader", {
+//     display: "none",
+//   });
   
-}
-fulltimeline()
+// }
+// fulltimeline()
 
 function nav() {
   gsap.to(".banner", {
-    backgroundColor: "#00000060",
-
-    // backdropFilter: "blur(10px)",
+    backgroundColor: "#00000090",
+    backdropFilter: "blur(10px)",
     duration: 0.5,
     height: "70px",
     scrollTrigger: {
@@ -353,41 +359,3 @@ searchIcon.addEventListener('click', function() {
       }
     });
 
-    function title() {
- 
-      if(window.innerWidth>425){
-        gsap
-      .timeline({ repeat: -1 }) // Infinite loop
-      .to(".text-container", {
-        y: "-35%",
-        duration: 1,
-        ease: "power2.inOut",
-        delay: 2,
-      }) // Move 2nd h1 up
-      .to(".text-container", {
-        y: "-80%",
-        duration: 1,
-        ease: "power2.inOut",
-        delay: 2,
-      }) // Move 3rd h1 up
-      }
-      else{
-        gsap
-      .timeline({ repeat: -1 }) // Infinite loop
-      .to(".text-container", {
-        y: "-45%",
-        duration: 1,
-        ease: "power2.inOut",
-        delay: 2,
-      }) // Move 2nd h1 up
-      .to(".text-container", {
-        y: "-90%",
-        duration: 1,
-        ease: "power2.inOut",
-        delay: 2,
-      }) // Move 3rd h1 up
-  
-      }
-    
-  }
-  title();
