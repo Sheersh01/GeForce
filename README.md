@@ -1,6 +1,6 @@
 # Project Name
 
-> Brief one‑liner about your project.
+> We tried to redesign the Hot Wheels website based on the figma file we got and tried to enhance it further by using better fonts , colors and animations.
 
 ## Teams
 - **Our Team:** GeForce  
