@@ -21,7 +21,7 @@
 > **Note for Judges:** Every enhancement is documented here; we’re ready to explain any choice or detail.
 
 ## Tech Stack
-React • Tailwind CSS • GSAP • Swiper.js • Node.js/Express • MongoDB
+HTML • CSS • Tailwind CSS • JavaScript • GSAP • Swiper.js • Node.js/Express • EJS • MongoDB
 
 ## Setup
 ```bash
