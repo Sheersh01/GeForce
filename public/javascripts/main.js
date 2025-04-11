@@ -334,8 +334,96 @@ function nav() {
 }
 nav();
 
+function boxAnim(){
+  const boxes = document.querySelectorAll(".box");
+  boxes.forEach((box) => {
+  // animate all boxes
+  gsap.to(box, {
+    scrollTrigger: {
+      scroller: "body", // use body as scroller
+      trigger: box,       // each box is its own trigger
+      start: "top 85%", 
+      end:"bottom 10%",     // when the top of the box hits 85% down the viewport
+      // toggleActions: "play none none none",
+      // markers: true,      // uncomment to debug start/end positions
+    },
+    opacity: 1,
+    duration: 1.0,
+    stagger: 0.2,
+    ease: "easeIn"
+  })
+  }
+  );
+  
+  
+}
+boxAnim()
 
+function textAnim(){
 
+  const heading = document.querySelector('.clutter-heading');
+  const text = heading.textContent;
+  heading.textContent = '';
+  text.split('').forEach(char => {
+    const span = document.createElement('span');
+    span.textContent = char;
+    span.style.display = 'inline-block';
+    heading.appendChild(span);
+  });
+  
+  // Animate letters in with random rotation/position
+  gsap.from(".clutter-heading span", {
+    scrollTrigger: {
+      trigger: ".clutter-heading",
+      start: "top 80%",
+      toggleActions: "play none none none",
+      // markers: true
+    },
+    opacity: 0,
+    x: () => gsap.utils.random(-100, 100),
+    y: () => gsap.utils.random(-100, 100),
+    rotation: () => gsap.utils.random(-90, 90),
+    duration: 1,
+    ease: "power4.out",
+    stagger: {
+      each: 0.03,
+      from: "center"
+    }
+  });
+  
+  const headingA = document.querySelector('.clutter-heading2');
+  const textA = headingA.textContent;
+  headingA.textContent = '';
+  textA.split('').forEach(char => {
+    const span = document.createElement('span');
+    span.textContent = char;
+    span.style.display = 'inline-block';
+    headingA.appendChild(span);
+  });
+  
+  // Animate letters in with random rotation/position
+  gsap.from(".clutter-heading2 span", {
+    scrollTrigger: {
+      trigger: ".clutter-heading2",
+      start: "top 80%",
+      toggleActions: "play none none none",
+      // markers: true
+    },
+    opacity: 0,
+    x: () => gsap.utils.random(-100, 100),
+    y: () => gsap.utils.random(-100, 100),
+    rotation: () => gsap.utils.random(-90, 90),
+    duration: 1,
+    ease: "power4.out",
+    stagger: {
+      each: 0.03,
+      from: "center"
+    }
+  });
+}
+textAnim()
+
+const searchIcon = document.querySelector('.search-icon');
 searchIcon.addEventListener('click', function() {
   if (searchForm.classList.contains('active')) {
     searchForm.classList.remove('active');
@@ -348,14 +436,10 @@ searchIcon.addEventListener('click', function() {
     title2.style.display = 'none'; // Hide title2 when search is active
   }
 });
-
-
-    // Optionally, hide the search field if it loses focus and is empty
-    searchInput.addEventListener('blur', function() {
+searchInput.addEventListener('blur', function() {
       if (searchInput.value.trim() === '') {
         searchForm.classList.remove('active');
         if(window.innerWidth<1024)
         title2.style.display = 'block';
       }
-    });
-
+});

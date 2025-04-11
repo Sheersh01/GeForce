@@ -29,10 +29,6 @@ html, body {
   align-items: center;
 }
 
-.overlay {
-  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-}
-
 .icons {
   display: flex;
   align-items: center;
@@ -40,15 +36,12 @@ html, body {
 
 .icon {
   cursor: pointer;
-  /* You can keep your Tailwind-like classes here or override as needed */
 }
 
-/* Hide the search form by default */
 .search-form {
   display: none;
 }
 
-/* When active, show the form */
 .search-form.active {
   display: inline-block;
 }
@@ -82,4 +75,30 @@ html, body {
   font-size: 2vw;
     font-family: rejoy;
   color: white;
+}
+
+/* CSS (e.g. in your global stylesheet) */
+.footer-link {
+  position: relative;   
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;               
+  width: 0;
+  height: 2px;                
+  background-color: #bb1a1a;   
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #dc2626;          
+}
+
+.footer-link:hover::after {
+  width: 100%;
 }
