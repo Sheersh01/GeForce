@@ -1,1 +1,31 @@
-# GeForce
+# Project Name
+
+> Brief one‑liner about your project.
+
+## Teams
+- **Our Team:** GeForce  
+- **Matched Team:** Monobyte  
+
+## Figma Design
+[Canva/Figma file](https://www.canva.com/design/DAGkVLqF0Io/LU_I81i-xDa30Jrr1cxLqA/edit?utm_content=DAGkVLqF0Io&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+## Live Demo
+[Deployed Site](<link>)
+
+## Key Enhancements
+- **GSAP + ScrollTrigger:** Smooth scroll‑based animations for better engagement.  
+- **Swiper.js Carousel:** Responsive, touch‑friendly slideshows.  
+- **Auth (Login/Logout):** Secure JWT/OAuth flow with protected routes.  
+- **Micro‑interactions:** Hover states and feedback animations for a polished UX.  
+
+> **Note for Judges:** Every enhancement is documented here; we’re ready to explain any choice or detail.
+
+## Tech Stack
+React • Tailwind CSS • GSAP • Swiper.js • Node.js/Express • MongoDB
+
+## Setup
+```bash
+git clone <repo>
+cd repo
+npm install
+npm run dev
