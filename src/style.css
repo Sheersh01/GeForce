@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'brick';
-  src: url('../public/NTBrickSans.ttf');
+  src: url('../NTBrickSans.ttf');
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   box-sizing: border-box;
 }
 html, body {

@@ -13,9 +13,9 @@
 />
   </head>
   <body>
-    <div id="page1" class="h-full w-full bg-red-100">
-      <nav class="bg-gray-900 flex justify-between items-center px-4">
-        <img class="h-30" src="./public/logo.png" alt="">
+    <div id="page1" class="min-h-screen w-full bg-red-100 relative">
+      <nav class="flex justify-between items-center px-4 absolute top-0 left-0 w-full">
+        <img class="h-30" src="./logo.png" alt="">
         <div class="nav-ryt">
           <div class=""></div>
           <div class="flex gap-4 text-white font-semibold text-[1.5vw] border-t-2 border-white">
@@ -26,9 +26,9 @@
           </div>
         </div>
       </nav>
-      <video autoplay muted loop src="h-full w-full object-cover"></video>
+      <video autoplay muted loop class="h-full w-full object-cover" src="./video.mp4"></video>
     </div>
-    <div id="page2" class="h-full w-full bg-green-100">
+    <div id="page2" class="min-h-screen w-full bg-green-100">
       <h1 class="font-[brick] text-[#FFA825] text-center text-[5vw]">Know Your Wheels!</h1>
       <div class="bg"></div>
       <div class="carousel">
@@ -48,9 +48,59 @@
         </div>
       </div>
     </div>
-    <div id="page3" class="h-full w-full bg-blue-100">
+    <div id="page3" class="min-h-screen w-full bg-blue-100 pb-10">
       <h1 class="font-[brick] text-[#FFA825] text-center text-[5vw]">Shop By Theme!</h1>
 
+     <div class="flex flex-col gap-4">
+<div class="flex justify-evenly items-center">
+  <div class="relative h-72 w-72 bg-red-500">
+    <h1 class="absolute top-0 left-0">
+      Racing
+    </h1>
+    <img class="w-full h-full object-cover" src="" alt="">
+  </div>
+  <div class="relative h-72 w-72 bg-red-500">
+    <h1 class="absolute top-0 left-0">
+      Racing
+    </h1>
+    <img class="w-full h-full object-cover" src="" alt="">
+  </div>
+  <div class="relative h-72 w-72 bg-red-500">
+    <h1 class="absolute top-0 left-0">
+      Racing
+    </h1>
+    <img class="w-full h-full object-cover" src="" alt="">
+  </div>
+</div>
+<div class="flex justify-evenly items-center">
+  <div class="relative h-72 w-72 bg-red-500">
+    <h1 class="absolute top-0 left-0">
+      Racing
+    </h1>
+    <img class="w-full h-full object-cover" src="" alt="">
+  </div>
+  <div class="relative h-72 w-72 bg-red-500">
+    <h1 class="absolute top-0 left-0">
+      Racing
+    </h1>
+    <img class="w-full h-full object-cover" src="" alt="">
+  </div>
+  <div class="relative h-72 w-72 bg-red-500">
+    <h1 class="absolute top-0 left-0">
+      Racing
+    </h1>
+    <img class="w-full h-full object-cover" src="" alt="">
+  </div>
+</div>
+     </div>
+    </div>
+    <div id="page4" class="min-h-screen w-full bg-orange-100 relative ">
+     <div class="absolute top-30 px-20">
+      <h1 class="font-bold text-[4vw]">Epic Easter Gifts</h1>
+      <p class="font-semibold text-[1.2vw] w-[70%]">Fuel endless action this spring! Thrill Hot Wheels fans with full-throttle vehicles, Monster Trucks, and more.</p>
+      <button class="bg-black font-bold text-white px-20 py-[4px] rounded-full text-[1.2vw] mt-4">Shop Now</button>
+     </div> 
+     <img class="w-full object-cover " src="../banner.avif" alt="">
      
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
