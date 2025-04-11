@@ -25,31 +25,31 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// function fulltimeline(){
-//   var tl = gsap.timeline();
+function fulltimeline(){
+  var tl = gsap.timeline();
 
-//   tl.from("#loader h3", {
-//     x: 200,
-//     opacity: 0,
-//     duration: 1,
-//     stagger: 0.1,
-//   });
-//   tl.to("#loader h3", {
-//     opacity: 0,
-//     x: -40,
-//     stagger: 0.1,
-//     duration: 0.5,
-//   });
-//   tl.to("#loader", {
-//     opacity: 0,
-//   });
+  tl.from("#loader h3", {
+    x: 200,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.1,
+  });
+  tl.to("#loader h3", {
+    opacity: 0,
+    x: -40,
+    stagger: 0.1,
+    duration: 0.5,
+  });
+  tl.to("#loader", {
+    opacity: 0,
+  });
  
-//   tl.to("#loader", {
-//     display: "none",
-//   });
+  tl.to("#loader", {
+    display: "none",
+  });
   
-// }
-// fulltimeline()
+}
+fulltimeline()
 
 function nav() {
   gsap.to(".banner", {
