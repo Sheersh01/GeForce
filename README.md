@@ -9,6 +9,8 @@
 ## Figma Design
 [Canva/Figma file](https://www.canva.com/design/DAGkVLqF0Io/LU_I81i-xDa30Jrr1cxLqA/edit?utm_content=DAGkVLqF0Io&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
+##deployed link
+https://test2-q764cu4k2-sheersh-saxenas-projects.vercel.app/
 
 ## Key Enhancements
 - **GSAP + ScrollTrigger:** Smooth scroll‑based animations for better engagement.  
